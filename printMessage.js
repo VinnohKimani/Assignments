@@ -1,7 +1,10 @@
 function printMessage(message) {
-  console.log("Good Morning");
+  console.log(message);
 }
-printMessage();
-function sendMessage(message ()=> {
-    
-});
+
+// printMessage("Good Morning");
+function sendMessage(message, callback) {
+  callback(message);
+}
+
+sendMessage("hello", printMessage);

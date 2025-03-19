@@ -1,4 +1,4 @@
-const price = 200;
+const price = 2000;
 
 const discountPercentage = 0;
 
