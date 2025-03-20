@@ -11,6 +11,18 @@ console.log(Number.parseFloat("6.4"));
 console.log(Math.ceil(0.5));
 console.log(Math.round(0.2));
 console.log(Math.floor(0.5));
-console.log(Math.random()+2);
+console.log(Math.random() + 2);
 console.log(Math.max(1, 4, 6, 7, 8, 10, 35));
 console.log(Math.min(1, 4, 6, 7, 8, 10, 35));
+
+sum(displayPage, 4, 8);
+function sum(callback, x, y) {
+  let result = x + y;
+  callback(result);
+}
+function displayPage(result) {
+  console.log(result);
+}
+function displayPage(result) {
+  document.getElementById("myH1").textContent = result;
+}
